@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import autoAnimate from "@formkit/auto-animate";
+// import autoAnimate from "@formkit/auto-animate";
 import { useEffect } from "react";
 const ChatBody = ({chat})=>{
     const aistyle = "bg-white bg-opacity-40 backdrop-blue-lg dropshadow-md mr-auto"
@@ -7,7 +7,8 @@ const ChatBody = ({chat})=>{
 
     const parent = useRef(null)
     useEffect(()=>{
-        parent.current && autoAnimate(parent.current)
+        parent.current
+            // && autoAnimate(parent.current)
     })
     const bottomRef = useRef(null);
 
