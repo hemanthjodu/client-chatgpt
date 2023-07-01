@@ -1,7 +1,6 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import autoAnimate from "@formkit/auto-animate";
-
-
+import { useEffect } from "react";
 const ChatBody = ({chat})=>{
     const aistyle = "bg-white bg-opacity-40 backdrop-blue-lg dropshadow-md mr-auto"
     const sending = "bg-black bg-opacity-40 backdrop-blue-lg dropshadow-md"
